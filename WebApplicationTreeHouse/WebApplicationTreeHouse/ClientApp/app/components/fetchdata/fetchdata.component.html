@@ -1,0 +1,18 @@
+<h1>Signed Up Users</h1>
+<br>
+<table class='table' *ngIf="userNew">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>DateTime</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userNew">
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.dateTime }}</td>
+        </tr>
+    </tbody>
+</table>

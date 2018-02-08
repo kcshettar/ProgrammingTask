@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Sign Up</h1><br>
+    <div style="width:40%">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+            <div>
+                <label>Full Name</label>
+                <input class="form-control" placeholder="Enter Here" [ngClass]="{'error': isValid('SignupName')}" formControlName="SignupName" required />
+                <p *ngIf="isValid('SignupName')" class="help-block">MinLength = 2, MaxLength = 50</p>
+            </div>
+            <br>
+            <div>
+                <label>E-Mail</label>
+                <input class="form-control" placeholder="Enter Here" [ngClass]="{'error': isValid('SignupEmail')}" formControlName="SignupEmail" required />
+                <p *ngIf="isValid('SignupEmail')" class="help-block">Enter a valid email address</p>
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="btn btn-default" [disabled]="!form.valid">SignUp</button>
+                <button style="margin-left:20px" class="btn" type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
