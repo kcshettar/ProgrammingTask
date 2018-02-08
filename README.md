@@ -6,4 +6,4 @@
 - Database - mLab(MongoDB) cloud
 - _[Screenshots](https://github.com/kcshettar/ProgrammingTask/tree/master/Screenshots)_
 ___
-> Author : [Kiran Shettar](https://www.cs.uml.edu/~kshettar)
+> Author : [Kiran Shettar](https://www.linkedin.com/in/kshettar/)
